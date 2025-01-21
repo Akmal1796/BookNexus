@@ -1,10 +1,11 @@
 import './App.css'
 import Login from './components/Login'
-import Register from './components/Register'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
+    <Header />
     </>
   )
 }
