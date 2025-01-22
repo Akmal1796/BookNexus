@@ -7,13 +7,13 @@ import profile from "../Images/profile.png"
 const Header = () => {
   return (
     <section className='flex justify-between items-center p-6 w-full h-20 bg-white'>
-        <div className='flex justify-between items-center w-[20%]'>
+        <div className='flex justify-between items-center w-[15%]'>
           <div className='font-semibold'>LOGO</div>
           <div><MdOutlineMenu size={25} className='cursor-pointer' /></div>
           <div className='font-bold'>Dashboard</div>
         </div>
         <div className='flex justify-center items-center w-[25%] relative overflow-hidden'>
-          <input type='text' placeholder='Search' className='rounded-md bg-slate-100 px-4 py-1 w-full' />
+          <input type='text' placeholder='Search...' className='rounded-md bg-slate-100 px-4 py-1 w-full' />
           <div className='bg-slate-50 py-1.5 px-2 absolute -right-0.5 rounded-l-none rounded-r-md'><IoSearch className='cursor-pointer' size={20} /></div>
         </div>
         <div className='flex justify-around items-center w-[20%]'>
@@ -26,7 +26,7 @@ const Header = () => {
               <p>Mohamed Akmal</p>
               <p className='text-gray-400'>Admin</p>
             </div>
-            <img src={profile} alt='profile image' className=' w-10 h-10 rounded-full' />
+            <img src={profile} alt='profile image' className=' w-10 h-10 rounded-full cursor-pointer' />
           </div>
         </div>
     </section>
