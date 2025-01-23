@@ -5,6 +5,7 @@ import { PiNote } from "react-icons/pi";
 import { HiMiniUsers } from "react-icons/hi2";
 import UsersTable from './UsersTable';
 import BooksTable from './BooksTable';
+import BookCard from './BookCard';
 
 const Content = () => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -87,6 +88,9 @@ const Content = () => {
                 </div>
                 <div><BooksTable /></div>
             </div>
+        </div>
+        <div>
+            <BookCard />
         </div>
     </main>
   )

@@ -60,7 +60,7 @@ const rows = [
 
 const BooksTable = () => {
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -73,7 +73,7 @@ const BooksTable = () => {
 
   return (
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-      <TableContainer sx={{ height: 440, scrollbarWidth: 'none' }}>
+      <TableContainer sx={{ height: 320, scrollbarWidth: 'none' }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
@@ -111,7 +111,7 @@ const BooksTable = () => {
         </Table>
       </TableContainer>
       <TablePagination
-        rowsPerPageOptions={[10, 25, 100]}
+        rowsPerPageOptions={[5, 10, 15]}
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}
