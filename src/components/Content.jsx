@@ -6,6 +6,8 @@ import { HiMiniUsers } from "react-icons/hi2";
 import UsersTable from './UsersTable';
 import BooksTable from './BooksTable';
 import BookCard from './BookCard';
+import OverdueBooks from './OverdueBooks';
+import IssuedBooks from './IssuedBooks';
 
 const Content = () => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -91,6 +93,15 @@ const Content = () => {
         </div>
         <div>
             <BookCard />
+        </div>
+        <div className='bg-white p-6 rounded-md'>
+            <div className='flex justify-between items-start mb-3'>
+                <h1 className='font-semibold text-2xl'>Overdue Book List</h1>
+            </div>
+            <div><OverdueBooks /></div>
+        </div>
+        <div>
+            <IssuedBooks />
         </div>
     </main>
   )
