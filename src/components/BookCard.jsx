@@ -116,7 +116,7 @@ const books = [
 const BookCard = () => {
   return (
     <div className='mt-8'>
-        <h1 className='font-bold text-left text-xl mb-4'>Top Choices</h1>
+        <h1 className='font-semibold text-left text-2xl mb-4'>Top Choices</h1>
         <div className='flex flex-col justify-center items-center'>
           <div className='flex justify-center gap-5 w-full'>
           {books.map((item) => {

@@ -31,7 +31,7 @@ const Content = () => {
     const seconds = currentDateTime.getSeconds();
 
   return (
-    <main className='p-4'>
+    <main className='p-4 h-[100vh] overflow-scroll'>
         <div className='flex justify-between items-center mt-8 mx-6'>
             <div>
                 <h1 className='font-bold text-4xl'>Hello, <span className='text-red-500'>Akmal!</span></h1>
@@ -94,7 +94,7 @@ const Content = () => {
         <div>
             <BookCard />
         </div>
-        <div className='bg-white p-6 rounded-md'>
+        <div className='bg-white p-6 rounded-md mt-6'>
             <div className='flex justify-between items-start mb-3'>
                 <h1 className='font-semibold text-2xl'>Overdue Book List</h1>
             </div>
